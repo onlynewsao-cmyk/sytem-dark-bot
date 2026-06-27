@@ -1,0 +1,32 @@
+{
+  "name": "sytem-dark-bot",
+  "version": "1.0.0",
+  "description": "Sytem DARK - Bot WhatsApp avançado com botões, downloads, interações e gestão de grupos.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "check": "node --check index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "latest",
+    "@whiskeysockets/baileys": "latest",
+    "awesome-phonenumber": "latest",
+    "axios": "latest",
+    "chalk": "^4.1.2",
+    "dotenv": "latest",
+    "express": "latest",
+    "file-type": "latest",
+    "node-cache": "latest",
+    "pino": "latest",
+    "qrcode-terminal": "latest",
+    "yt-search": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
