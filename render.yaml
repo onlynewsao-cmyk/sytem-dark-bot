@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: sytem-dark-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BOT_NUMBER
+        value: 244949926074
+      - key: OWNER_NUMBER
+        value: 244945280380
+      - key: PREFIX
+        value: .
+      - key: PAIRING_CODE
+        value: true
+      - key: PAIRING_NUMBER
+        value: 244949926074
+      - key: USE_QR
+        value: false
+      - key: AUTH_ID
+        value: sytem_dark_244949926074
+      - key: MONGODB_DB
+        value: sytem_dark
+      - key: MONGODB_URI
+        sync: false
+      - key: PORT
+        value: 3000
+      - key: COPILOT_MODEL
+        value: gpt-5

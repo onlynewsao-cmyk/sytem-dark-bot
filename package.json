@@ -1,0 +1,35 @@
+{
+  "name": "sytem-dark-bot",
+  "version": "5.2.1",
+  "description": "Sytem DARK ULTIMATE PLUS SECURE - WhatsApp Bot Independente by Dark Net - IA Grok/Gemini/SystemZero + 1500+ features",
+  "main": "index.js",
+  "type": "commonjs",
+  "author": "Dark Net",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "check": "node --check index.js && node --check src/main.js && node --check src/config.js && node --check src/core/database.js && node --check src/handlers/router.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "latest",
+    "axios": "^1.7.2",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "file-type": "^16.5.4",
+    "form-data": "^4.0.0",
+    "mongodb": "^6.8.0",
+    "node-cache": "^5.1.2",
+    "pdfkit": "^0.15.0",
+    "pino": "^9.3.2",
+    "qrcode-terminal": "^0.12.0",
+    "@distube/ytdl-core": "^4.13.5",
+    "yt-search": "^2.12.1",
+    "awesome-phonenumber": "^7.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
