@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: dark-system-whatsapp-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: BOT_NAME
+        value: DARK System
+      - key: OWNER_NAME
+        value: Dark Net
+      - key: OWNER_NUMBER
+        value: 244945280380
+      - key: BOT_NUMBER
+        value: 244949926074
+      - key: DEFAULT_PREFIXES
+        value: "!,.,/,#"
+      - key: RENDER_FREE_REQUIRES_BOT_ADMIN
+        value: "true"
+      - key: QR_WEB_ENABLED
+        value: "true"
+      - key: USE_PAIRING_CODE
+        value: "true"
+      - key: PAIRING_NUMBER
+        value: 244949926074
+      - key: TZ
+        value: Africa/Luanda
+      - key: MONGODB_URI
+        sync: false
+      - key: QR_WEB_KEY
+        generateValue: true
